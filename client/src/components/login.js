@@ -24,7 +24,9 @@ const Login = () => {
   const facebookHandler = () => {
     window.open("http://localhost:5000/auth/facebook");
   };
-
+  const GithubHandler = () => {
+    window.open("http://localhost:5000/auth/github");
+  };
   return (
     <div className="login-wrapper">
       <div className="card p-0">
@@ -33,7 +35,7 @@ const Login = () => {
           <div className="header-style">
             <h2>LOGIN FORM </h2>
           </div>
-          <div className="btn-style">
+          <div className="input-style">
             <TextField
               id="outlined-basic"
               label="Username"
@@ -48,7 +50,7 @@ const Login = () => {
               }}
             />
           </div>
-          <div className="btn-style">
+          <div className="input-style">
             <TextField
               id="outlined-basic"
               label="Password"
@@ -63,7 +65,7 @@ const Login = () => {
             />
           </div>
           <div className="btn-style">
-            <button type="button" className="login-btn">
+            <button type="button" className="login-button">
               Login
             </button>
           </div>
@@ -85,7 +87,7 @@ const Login = () => {
             <div className="btn-style">
               <button
                 type="button"
-                className="login-btn fb"
+                className="login-btn login-btn-fb"
                 onClick={facebookHandler}
               >
                 <div>
@@ -95,7 +97,7 @@ const Login = () => {
               </button>
             </div>
             <div className="btn-style">
-              <button type="button" className="login-btn insta">
+              <button type="button" className="login-btn login-btn-insta">
                 <div>
                   <InstagramIcon />
                 </div>
@@ -103,7 +105,7 @@ const Login = () => {
               </button>
             </div>
             <div className="btn-style">
-              <button type="button" className="login-btn twitter">
+              <button type="button" className="login-btn  login-btn-twitter">
                 <div>
                   <TwitterIcon />
                 </div>
@@ -111,7 +113,7 @@ const Login = () => {
               </button>
             </div>
             <div className="btn-style">
-              <button type="button" className="login-btn git">
+              <button type="button" className="login-btn git" onClick={GithubHandler}>
                 <div>
                   <GitHubIcon />
                 </div>

@@ -348,13 +348,12 @@ display: block;
 
 .login-btn{
   background-color: #f4f6f7;
-  color: rgb(0, 0, 0);
+  color:  rgb(106 90 90);
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 100%;
-  border-radius: 10px;
+   border-radius: 10px;
   transition: all 0.4s ease;
   /* border: #000; */
   box-shadow:  rgba(158, 93, 93, 0.1) 0px 20px 25px -5px, rgba(251, 103, 103, 0.04) 0px 10px 10px -5px;
@@ -373,3 +372,36 @@ display: block;
 .social-align{
 display: flex
 }
+
+.login-btn-fb{
+color: rgb(25, 88, 171);
+}
+
+.login-btn-twitter{
+  color: rgb(88, 145, 218);
+  }
+
+.login-btn-insta{
+  color:rgb(201, 60, 182);
+  }
+
+  .login-button{
+    padding: 14px 20px;
+    margin: 8px;
+    width: 80%;
+    border-radius: 8px;
+    background-color: #f4f6f7;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border-color: white;
+  }
+
+  .login-button:hover{
+    /* box-shadow: rgb(0 0 0 / 50%) 0px 20px 25px -5px, rgb(0 0 0 / 20%) 0px 10px 10px -5px; */
+    background-color: #f7f7f7;
+  }
+  .input-style{
+    margin-bottom: 4px;
+    margin-top: 25px;
+}
+  
